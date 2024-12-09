@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Gerador de Senhas Aleatorias</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <img class="logo" src="senhasegura-1(1).png" alt="SENHA_SEGURA">
+
+    <main class="container-input">
+        <span>Tamanho <span id="valor"></span> caracteres</span>
+        <input class="slider" type="range" id="slider" min="8" max="32" value="16">
+
+        <button id="button" class="button-cta" onclick="generatePassword()">Gerar Senha</button>
+    </main>
+
+    <div id="container-password"  class="container-password hide" onclick="copyPass()">
+        <span class="title">Sua senha gerada foi</span>
+        <span class="password" id="password">Sua senha gerada foi</span>
+        <span class="tooltip">Clique para copiar a senha.</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
